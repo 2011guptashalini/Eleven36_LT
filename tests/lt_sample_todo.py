@@ -1,5 +1,7 @@
 import pytest
 from selenium.webdriver.common.by import By
+from utils import utils as utils
+from pages.SamplePage import SamplePage 
 
 
 @pytest.mark.usefixtures('driver')
@@ -10,8 +12,10 @@ class TestLink:
         Verify click and title of page
         :return: None
         """
-        driver.get('https://lambdatest.github.io/sample-todo-app/')
+        driver.get(utils.URL)
         driver.implicitly_wait(10)
+        sp = SamplePage(driver)
+        sp.click_li()
         driver.find_element(By.NAME, "li1").click()
         driver.find_element(By.NAME, "li2").click()
 

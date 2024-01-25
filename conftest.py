@@ -15,15 +15,23 @@ def driver(request):
     selenium_endpoint = "http://{}:{}@hub.lambdatest.com/wd/hub".format(username, access_key)
     chrome_options = webdriver.ChromeOptions()
     option = {
-        "platform": "Windows 10",
-        "version": "latest",
-        "name": test_name,
-        "Build": build,
-        "video": True,
-        "visual": True,
-        "network": True,
-        "console": True
-    }
+    "single_test": {
+        "browserName": "Chrome",
+        "browserVersion": "121.0",
+        "LT:Options": {
+            "username": "2011guptashalini",
+            "accessKey": "BONUD8qsnqog9BHgcRMWkAqwOcTLMadkrMVJFqp4a3xjijd5ou",
+            "visual": True,
+            "video": True,
+            "platformName": "Windows 10",
+            "build": "LambdaTest",
+            "project": "Eleven36",
+            "name": "Smoke Test",
+            "w3c": True,
+            "plugin": "python-pytest"
+        }
+  }
+}
     chrome_options.set_capability("LT:Options", option)
     browser = webdriver.Remote(
         command_executor=selenium_endpoint,
