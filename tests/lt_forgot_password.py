@@ -4,8 +4,7 @@ from selenium.common.exceptions import NoSuchElementException
 from pages.LoginPage import LoginPage
 from pages.ForgotPasswordPage import ForgotPasswordPage
 from utils import utils as utils
-import allure
-import moment
+
 
 @pytest.mark.usefixtures("driver")
 class TestForgotPassword:

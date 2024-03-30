@@ -19,8 +19,8 @@ def driver(request):
         "browserName": "Chrome",
         "browserVersion": "121.0",
         "LT:Options": {
-            "username": "2011guptashalini",
-            "accessKey": "BONUD8qsnqog9BHgcRMWkAqwOcTLMadkrMVJFqp4a3xjijd5ou",
+            "username": "sgka6475",
+		    "accessKey": "q9JLkwtmVTyr4UiSRWtgQXb3uVZeDDA6RwoXJv6Tr61L2TCSBG",
             "visual": True,
             "video": True,
             "platformName": "Windows 10",

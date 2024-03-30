@@ -5,8 +5,7 @@ from pages.LoginPage import LoginPage
 from pages.GetStartedPage import GetStartedPage
 from pages.LaunchPage import LaunchPage
 from utils import utils as utils
-import allure
-import moment
+
 
 
 @pytest.mark.usefixtures('driver')

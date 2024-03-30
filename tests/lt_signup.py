@@ -6,8 +6,7 @@ from pages.LoginPage import LoginPage
 from pages.GetStartedPage import GetStartedPage
 from pages.RegisterPage import RegisterPage
 from utils import utils as utils
-import allure
-import moment
+
 
 
 
